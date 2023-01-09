@@ -6,7 +6,7 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 12:08:24 by asolano-          #+#    #+#             */
-/*   Updated: 2022/09/23 10:28:29 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/09 11:14:18 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,6 @@ typedef struct s_point {
 	float	axis[3];
 	int		color;
 	bool	paint;
-	float	polar[2];
 }	t_point;
 
 typedef struct m_colors {
@@ -103,9 +102,6 @@ typedef struct m_map {
 	bool		b_lines;
 	bool		b_dots;
 	bool		b_pluslines;
-	bool		b_geo;
-	bool		b_stars;
-	bool		b_shadow;
 	double		performance;
 	float		proportion;
 	float		radius;

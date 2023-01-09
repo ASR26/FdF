@@ -6,7 +6,7 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 13:08:08 by asolano-          #+#    #+#             */
-/*   Updated: 2022/09/28 10:53:24 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/09 10:59:36 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,6 @@
 #include <errno.h>
 #include <stdio.h>
 
-/*
- * Esta función ajusta el ángulo para que esté en los límites 0-359
- */
 void	angle(float *ang, float value)
 {
 	*ang += value;
@@ -31,10 +28,6 @@ void	angle(float *ang, float value)
 		*ang = *ang - 360;
 }
 
-/*
- * Esta función añade grados a la estructura de control dependiendo de
- * la tecla pulsada
- */
 void	angle_control(int key, t_meta *meta)
 {
 	int	ang;
@@ -56,10 +49,6 @@ void	angle_control(int key, t_meta *meta)
 		angle (&meta->map.ang[Z], -ang);
 }
 
-/*
- * Esta función cierra el programa
- */
-
 int	terminate_program(void *param)
 {
 	t_meta	*meta;
@@ -70,21 +59,15 @@ int	terminate_program(void *param)
 	exit(0);
 }
 
-/* Esta función cierra el programa si ocurre algun error*/
 void	terminate(char *str)
 {
-	//si el return recibido es 0 escribimos nosotros el mensaje
 	if (errno == 0)
 		ft_putendl_fd(str, 2);
-	//si el return es un código de error lo escribimos con la funcion perror
 	else
 		perror(str);
 	exit(1);
 }
 
-/*
- * Esta función maneja las paletas de colores según el botón que se pulse
- */
 void	control_colorscheme(int key, t_map *map)
 {
 	map->colors.backcolor = CARBON;

@@ -6,7 +6,7 @@
 #    By: ailopez- <ailopez-@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/09 16:48:38 by ailopez-          #+#    #+#              #
-#    Updated: 2022/09/23 11:46:03 by asolano-         ###   ########.fr        #
+#    Updated: 2023/01/09 11:07:02 by asolano-         ###   ########.fr        #
 #    Updated: 2022/05/24 00:35:24 by aitorlope        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
@@ -49,7 +49,7 @@ WHITE = \033[0;97m
 
 SRC_FILES	=	main control_keys control_mouse control_utils utils matrix geometry \
 				map_load map_draw menu map_utils map_utils2 draw_utils \
-				draw_utils2 geometry2 utils2
+				draw_utils2 utils2
 
 SRC 		= 	$(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))
 OBJ 		= 	$(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))

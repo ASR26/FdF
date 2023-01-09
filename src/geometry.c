@@ -6,17 +6,12 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 11:09:52 by asolano-          #+#    #+#             */
-/*   Updated: 2022/10/03 08:32:28 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/09 10:42:54 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/defines.h"
 #include <math.h>
-
-
-/*
- * Recorre todos los puntos y añade la traslacion de 'move'
- */
 
 void	traslate(t_point *points, t_point move, int len)
 {
@@ -32,9 +27,6 @@ void	traslate(t_point *points, t_point move, int len)
 	}
 }
 
-/*
- * Recorre los puntos y multiplica por la escala
- */
 void	scale(t_point *points, int scale, int len)
 {
 	int	i;
@@ -49,12 +41,8 @@ void	scale(t_point *points, int scale, int len)
 	}
 }
 
-/*
- * Esta función ajusta los parámetros para vista isométrica
- */
 void	isometric(t_map *map)
 {
-	map->b_geo = 0;
 	map->ang[X] = 30;
 	map->ang[Y] = 330;
 	map->ang[Z] = 30;
@@ -63,12 +51,8 @@ void	isometric(t_map *map)
 	map->source.axis[Y] = WINY / 2;
 }
 
-/*
- * Esta función ajusta los parámetros para vista paralela
- */
 void	parallel(t_map *map)
 {
-	map->b_geo = 0;
 	map->ang[X] = 90;
 	map->ang[Y] = 0;
 	map->ang[Z] = 0;
@@ -77,10 +61,6 @@ void	parallel(t_map *map)
 	map->source.axis[Y] = WINY / 2;
 }
 
-/*
- * esta función permitirá "doblar" la proyección en relación al rango y a la
- * posición en x y en y, cuanto más alejado del centro más se aleja
- */
 void	bending(t_point *points, int len, float range)
 {
 	int		i;

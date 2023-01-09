@@ -6,7 +6,7 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 12:43:09 by asolano-          #+#    #+#             */
-/*   Updated: 2022/09/30 10:10:28 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/09 11:15:38 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,6 @@
 #define LINE_SIZE			30
 #define MENU_TAB			20
 
-/*
- * Esta función dibuja información sobre los colores
- */
 static void	draw_colorscheme(t_meta *meta)
 {
 	int	line;
@@ -40,9 +37,6 @@ static void	draw_colorscheme(t_meta *meta)
 	line += LINE_SIZE;
 }
 
-/*
- * Esta función imprime información sobre el mapa
- */
 static void	draw_mapinfo(t_meta *meta)
 {
 		int		line;
@@ -67,10 +61,6 @@ static void	draw_mapinfo(t_meta *meta)
 	line += LINE_SIZE;
 }
 
-
-/*
- * Esta función escribe los controles en el menú
-*/
 static void	draw_controls(t_meta *meta)
 {
 	int	line;
@@ -93,8 +83,6 @@ static void	draw_controls(t_meta *meta)
 	print_str(meta, MENU_TAB, line, "P/I/F/C Paral/Iso/Fit/Center");
 	line += LINE_SIZE;
 	print_str(meta, MENU_TAB, line, "D/L/X: Dots/Lines/Extra Lines");
-	line += LINE_SIZE;
-	print_str(meta, MENU_TAB, line, "G/S/H: Globe/Stars/Shadow");
 	line += LINE_SIZE;
 	print_str(meta, MENU_TAB, line, "R/ESC: Reset/Close");
 }
@@ -127,9 +115,6 @@ static void	draw_info(t_meta *meta)
 	print_nbr(meta, MENU_TAB + 100, line, meta->map.brange * 10000);
 }
 
-/*
- * Esta función sería el main del menú
- */
 void	draw_menu(t_meta *meta)
 {
 	draw_controls(meta);

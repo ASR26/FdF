@@ -6,7 +6,7 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 12:36:36 by asolano-          #+#    #+#             */
-/*   Updated: 2022/09/23 10:31:29 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/09 11:05:58 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,4 @@ void	scale(t_point *points, int scale, int len);
 void	isometric(t_map *map);
 void	bending(t_point *points, int len, float range);
 void	parallel(t_map *map);
-void	spherize(t_map *map, t_point *points);
-void	go_polar(t_map *map);
 #endif

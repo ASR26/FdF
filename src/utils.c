@@ -6,7 +6,7 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 11:47:58 by asolano-          #+#    #+#             */
-/*   Updated: 2022/09/22 13:43:21 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/09 10:56:47 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,6 @@ void	print_str(t_meta *meta, int x, int y, char *str)
 	mlx_string_put(meta->vars.mlx, meta->vars.win, x, y, TEXT_COLOR, str);
 }
 
-/*
- * Esta función redondea un double para devolver un int
- */
 int	ft_round(double num)
 {
 	int	rounded;
@@ -41,11 +38,6 @@ int	ft_round(double num)
 	return (rounded);
 }
 
-
-
-/*
- * función que libera un doble puntero (double free)
- */
 void	dbl_free(char **ptr)
 {
 	int	i;
@@ -61,9 +53,6 @@ void	dbl_free(char **ptr)
 	free(ptr);
 }
 
-/*
- * Esta función inicializa una matriz
- */
 void	matrix_init(float (*matrix)[3])
 {
 	int	i;

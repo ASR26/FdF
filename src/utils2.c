@@ -6,16 +6,12 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 10:44:00 by asolano-          #+#    #+#             */
-/*   Updated: 2022/09/28 11:22:06 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/09 11:04:24 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/defines.h"
 
-
-/*
- * Esta función copia len puntos de src en dst
- */
 void	copy_map(t_point *src, t_point *dst, int len)
 {
 	int	i;
