@@ -81,9 +81,7 @@ void	drawing(t_meta *meta, t_point *proyect, int fit)
 int	draw_map(t_meta *meta, int fit)
 {
 	t_point	*proyect;
-	clock_t	t;
 
-	t = clock();
 	proyect = malloc (meta->map.len * sizeof(t_point));
 	if (proyect == NULL)
 		terminate(ERR_MEM);
@@ -97,7 +95,5 @@ int	draw_map(t_meta *meta, int fit)
 			meta->bitmap.img, 0, 0);
 	draw_menu(meta);
 	free(proyect);
-	t = clock() - t;
-	meta->map.performance = ((double)t) / CLOCKS_PER_SEC;
 	return (1);
 }

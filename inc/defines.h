@@ -102,7 +102,6 @@ typedef struct m_map {
 	bool		b_lines;
 	bool		b_dots;
 	bool		b_pluslines;
-	double		performance;
 	float		proportion;
 	float		radius;
 }	t_map;

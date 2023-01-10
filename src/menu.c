@@ -97,9 +97,6 @@ static void	draw_info(t_meta *meta)
 	print_str(meta, MENU_TAB, line, "Renders:");
 	print_nbr(meta, MENU_TAB + 100, line, meta->map.renders);
 	line += LINE_SIZE;
-	print_str(meta, MENU_TAB, line, "Performance(ms):");
-	print_nbr(meta, MENU_TAB + 170, line, meta->map.performance * 1000);
-	line += LINE_SIZE;
 	print_str(meta, MENU_TAB, line, "X, Y, Z: [   ] [   ] [   ]");
 	print_nbr(meta, MENU_TAB + 100, line, meta->map.ang[X]);
 	print_nbr(meta, MENU_TAB + 160, line, meta->map.ang[Y]);
