@@ -6,7 +6,7 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 13:14:56 by asolano-          #+#    #+#             */
-/*   Updated: 2023/01/09 10:50:31 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/10 08:50:48 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,8 +51,7 @@ void	load_hexcolors(t_map *map, char *line)
 	}
 }
 
-
-static void load_points(char *line, t_map *map, int numline)
+static void	load_points(char *line, t_map *map, int numline)
 {
 	char	**splitted;
 	int		i;

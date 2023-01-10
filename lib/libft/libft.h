@@ -6,33 +6,20 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/21 09:06:02 by asolano-          #+#    #+#             */
-/*   Updated: 2022/09/26 13:13:49 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/10 09:21:50 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
 # include <stdlib.h>
 # include <unistd.h>
 # include <stddef.h>
 # include <string.h>
 
-# define FT_MIN(A, B) (((A) < (B)) ? (A) : (B))
-# define FT_MAX(A, B) (((A) > (B)) ? (A) : (B))
-
-# define FT_ABS(X) (((X) < 0) ? (-(X)) : (X))
-
-# define FT_ULONG_MAX	((unsigned long)(~0L))
-# define FT_LONG_MAX	((long)(FT_ULONG_MAX >> 1))
-# define FT_LONG_MIN	((long)(~FT_LONG_MAX))
-
-# define FT_UINT_MAX	((unsigned)(~0L))
-# define FT_INT_MAX		((int)(FT_UINT_MAX >> 1))
-# define FT_INT_MIN		((int)(~FT_INT_MAX))
-
-#ifndef BUFFER_SIZE
-# define BUFFER_SIZE 42
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
 
 typedef struct s_list
 {
@@ -85,10 +72,10 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lt, void *(*f)(void *), void (*del)(void *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
-int				ft_line_len(char *ptr);
-void			ft_clean_memory(char **memory);
-int				ft_fill_memory(char **memory, int fd);
-char			*ft_get_line(char **memory);
+int		ft_line_len(char *ptr);
+void	ft_clean_memory(char **memory);
+int		ft_fill_memory(char **memory, int fd);
+char	*ft_get_line(char **memory);
 char	*get_next_line(int fd);
-#endif
+
 #endif

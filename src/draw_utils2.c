@@ -6,7 +6,7 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 08:46:42 by asolano-          #+#    #+#             */
-/*   Updated: 2023/01/09 11:12:16 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/10 08:45:52 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,12 +62,12 @@ void	draw_dot(t_meta *meta, t_point point, int radius)
 	}
 }
 
-int gradient(int startcolor, int endcolor, int len, int pix)
+int	gradient(int startcolor, int endcolor, int len, int pix)
 {
 	double	increment[3];
 	int		new[3];
 	int		newcolor;
-	
+
 	increment[0] = (double)((endcolor >> 16) - \
 			(startcolor >> 16)) / (double)len;
 	increment[1] = (double)(((endcolor >> 8) & 0xFF) - \

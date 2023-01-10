@@ -6,7 +6,7 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 13:04:03 by asolano-          #+#    #+#             */
-/*   Updated: 2023/01/09 10:45:09 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/10 08:46:24 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ void	system_init(t_meta *meta)
 int	main(int argc, char **argv)
 {
 	t_meta	meta;
+
 	if (argc != 2)
 		terminate(ERR_ARGS);
 	load_map(&meta.map, argv[1]);

@@ -6,7 +6,7 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 10:47:42 by asolano-          #+#    #+#             */
-/*   Updated: 2023/01/09 10:59:01 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/10 08:46:42 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	mouse_move(int x, int y, void *param)
 	t_meta	*meta;
 
 	meta = (t_meta *)param;
-	if (x >  WINX || x < 0 || y > WINY || y < 0)
+	if (x > WINX || x < 0 || y > WINY || y < 0)
 		return (0);
 	if (meta->keys.b_mouse_l)
 	{

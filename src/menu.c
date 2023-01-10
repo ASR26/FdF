@@ -6,7 +6,7 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 12:43:09 by asolano-          #+#    #+#             */
-/*   Updated: 2023/01/09 11:15:38 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/10 08:49:51 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 static void	draw_colorscheme(t_meta *meta)
 {
 	int	line;
-	
+
 	line = COLORSCHEME_BOX;
 	print_str(meta, MENU_TAB, line, "/// COLORSCHEME ///");
 	line += LINE_SIZE;
@@ -39,7 +39,7 @@ static void	draw_colorscheme(t_meta *meta)
 
 static void	draw_mapinfo(t_meta *meta)
 {
-		int		line;
+	int	line;
 
 	line = MAPINFO_BOX;
 	print_str(meta, MENU_TAB, line, "/// MAP INFO ///");

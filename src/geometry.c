@@ -6,7 +6,7 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 11:09:52 by asolano-          #+#    #+#             */
-/*   Updated: 2023/01/09 10:42:54 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/10 08:44:44 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ void	bending(t_point *points, int len, float range)
 	while (i < len)
 	{
 		vv = ((points[i].axis[X] * points[i].axis[X]) * (range)) + \
-			 (points[i].axis[Y] * points[i].axis[Y]) * (range);
+			(points[i].axis[Y] * points[i].axis[Y]) * (range);
 		points[i].axis[Z] = points[i].axis[Z] - vv;
 		i++;
 	}

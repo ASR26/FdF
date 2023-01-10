@@ -6,7 +6,7 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 13:22:45 by asolano-          #+#    #+#             */
-/*   Updated: 2023/01/09 11:15:15 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/10 08:51:20 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,13 +89,13 @@ void	control_keys1(int key, t_meta *meta)
 
 int	key_press(int key, void *param)
 {
-	t_meta *meta;
+	t_meta	*meta;
 
 	meta = (t_meta *)param;
 	angle_control(key, meta);
-	control_keys1(key,meta);
-	control_keys2(key,meta);
-	control_keys3(key,meta);
+	control_keys1(key, meta);
+	control_keys2(key, meta);
+	control_keys3(key, meta);
 	if (key >= KEY_1 && key <= KEY_4)
 		control_colorscheme(key, &meta->map);
 	draw_map(meta, FREE);

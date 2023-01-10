@@ -6,7 +6,7 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 13:19:02 by asolano-          #+#    #+#             */
-/*   Updated: 2023/01/09 11:13:35 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/10 08:50:25 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 int	line_elems(char **elems)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (elems[i] && elems[i][0] != '\n')
@@ -42,8 +42,6 @@ int	valid_point(char *value)
 	else
 		return (1);
 }
-
-
 
 void	z_limits(char **splitted, t_map *map)
 {

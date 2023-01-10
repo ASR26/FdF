@@ -6,7 +6,7 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 11:47:58 by asolano-          #+#    #+#             */
-/*   Updated: 2023/01/09 10:56:47 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/10 08:47:42 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	dbl_free(char **ptr)
 	int	i;
 
 	if (!ptr)
-		return;
+		return ;
 	i = 0;
 	while (ptr[i])
 	{

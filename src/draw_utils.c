@@ -6,7 +6,7 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 09:51:49 by asolano-          #+#    #+#             */
-/*   Updated: 2023/01/09 11:01:16 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/10 08:48:20 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,6 @@ int	get_color(t_meta *meta, int color)
 	return (color);
 }
 
-
 void	generate_background(t_meta *meta, int backcolor, int menucolor)
 {
 	int	axis[2];
@@ -78,7 +77,7 @@ void	generate_background(t_meta *meta, int backcolor, int menucolor)
 		{
 			if (axis[X] < MENU_WIDTH)
 				color = menucolor;
-			else 
+			else
 				color = backcolor;
 			pixel = (axis[Y] * meta->bitmap.lines) + (axis[X] * 4);
 			set_color(&meta->bitmap.buffer[pixel], \

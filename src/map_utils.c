@@ -6,7 +6,7 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 11:03:38 by asolano-          #+#    #+#             */
-/*   Updated: 2023/01/09 10:52:05 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/10 08:47:13 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ void	doted(t_meta *meta, t_point *proyect)
 void	z_division(t_point *proyect, float divisor, int len)
 {
 	int	i;
-	
+
 	i = 0;
 	while (i < len)
 	{

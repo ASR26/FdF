@@ -6,7 +6,7 @@
 /*   By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 09:40:44 by asolano-          #+#    #+#             */
-/*   Updated: 2023/01/09 11:16:07 by asolano-         ###   ########.fr       */
+/*   Updated: 2023/01/10 08:49:04 by asolano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ static void	parse_map(t_meta *meta, t_point *proyect)
 	traslate(proyect, meta->map.source, meta->map.len);
 }
 
-static int limits(t_point *points, int len)
+static int	limits(t_point *points, int len)
 {
 	int	i;
 
@@ -53,7 +53,7 @@ static int limits(t_point *points, int len)
 	return (0);
 }
 
-static void go_fit(t_meta *meta, t_point *proyect)
+static void	go_fit(t_meta *meta, t_point *proyect)
 {
 	meta->map.source.axis[X] = ((WINX - MENU_WIDTH) / 2) + MENU_WIDTH;
 	meta->map.source.axis[Y] = WINY / 2;
@@ -68,7 +68,6 @@ static void go_fit(t_meta *meta, t_point *proyect)
 	}
 }
 
-
 void	drawing(t_meta *meta, t_point *proyect, int fit)
 {
 	if (fit)
@@ -78,7 +77,6 @@ void	drawing(t_meta *meta, t_point *proyect, int fit)
 	if (meta->map.b_dots)
 		doted(meta, proyect);
 }
-
 
 int	draw_map(t_meta *meta, int fit)
 {
