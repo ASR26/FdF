@@ -3,11 +3,11 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ailopez- <ailopez-@student.42barcelon      +#+  +:+       +#+         #
+#    By: asolano- <asolano-@student.42malaga.c      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/05/09 16:48:38 by ailopez-          #+#    #+#              #
+#    Created: 2022/05/09 16:48:38 by asolano-          #+#    #+#              #
 #    Updated: 2023/01/09 11:07:02 by asolano-         ###   ########.fr        #
-#    Updated: 2022/05/24 00:35:24 by aitorlope        ###   ########.fr        #
+#    Updated: 2022/05/24 00:35:24 by asolano-        ###   ########.fr         #
 #                                                                              #
 # **************************************************************************** #
 #Variables
