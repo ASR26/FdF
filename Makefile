@@ -3,7 +3,7 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: asolano- <asolano-@student.42malaga.c      +#+  +:+       +#+         #
+#    By: asolano- <asolano-@student.42malaga.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/09 16:48:38 by asolano-          #+#    #+#              #
 #    Updated: 2023/01/09 11:07:02 by asolano-         ###   ########.fr        #
